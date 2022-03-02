@@ -1,0 +1,20 @@
+主色 #26BEC9
+Header手機連結 #639998
+灰色字 #727272
+線條 #e5e6e9a8
+font-size 0.7rem
+
+https://cdn.kkday.com/pc-web/assets/img/ic_star4_0.svg
+https://cdn.kkday.com/pc-web/assets/img/ic_star4_1.svg
+https://cdn.kkday.com/pc-web/assets/img/ic_star4_2.svg
+https://cdn.kkday.com/pc-web/assets/img/ic_star4_3.svg
+https://cdn.kkday.com/pc-web/assets/img/ic_star4_4.svg
+
+https://cdn.kkday.com/pc-web/assets/img/ic_top10_label.svg
+
+https://cdn.kkday.com/pc-web/assets/img/bg_whykkday.svg
+
+feature:
+偽元素應用
+flex
+shrink、grow應用
