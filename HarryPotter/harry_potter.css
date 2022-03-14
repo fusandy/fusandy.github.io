@@ -1,0 +1,132 @@
+body {
+    background-color: #111d4a;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    padding: 5%;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+}
+#searchBar {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+#searchBar:focus{
+    outline: 5px solid #374886;;
+}
+#searchWrapper {
+    position: relative;
+}
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    cursor: pointer;
+}
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.text-area h4 {
+    padding-top: 5%;
+    margin-bottom: 0;
+}
+.text-area p {
+    margin: 0;
+    padding-top: 5%;
+    font-size: .8rem;
+}
+.photo{
+    width: 25%;
+}
+.photo img {
+    width: 100%;
+    object-fit: fill;
+    max-height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(202, 200, 200);
+}
+li{
+    cursor: pointer;
+}
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #1b2c6d9c;
+}
+.modal-box{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.26);
+    animation: modalopen 1s; 
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#111d4a;
+}
+#closeBtn{
+    font-size: 30px;
+    color:#111d4a;
+    cursor: pointer;
+}
+.box-content p {
+    margin: 2px;
+}
+.box-content h4{
+    margin-top: 0;
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+}
+.content-img{
+    width: 30%;
+    overflow: hidden;
+}
+.content-img img{
+    width: 100%;
+}
+
+@keyframes modalopen {
+    from{ opacity: 0}
+    to{opacity: 1}
+}
