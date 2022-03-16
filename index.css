@@ -5,6 +5,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    color: #333;
+}
 .toggle{
     position: fixed;
     top: 30px;
@@ -190,4 +194,198 @@ p{
 }
 .about .content .imgBox img{
     max-width: 100%;
+}
+.works .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.works .content .worksBox{
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: .5s;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.works .content .worksBox:hover{
+    background: #333;
+}
+.works .content .worksBox img{
+    max-width: 300px;
+    transition: .5s;
+}
+.works .content .worksBox h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+.works .content .worksBox:hover h2{
+    color: #fff;
+}
+.works .content .worksBox p{
+    margin: 0;
+    transition: .5s;
+}
+.works .content .worksBox:hover p{
+    color: #fff;
+}
+.leisure .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.leisure .content .leisureBox{
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin: 10px;
+    transition: .5s;
+    text-align: center;
+}
+.leisure .content .leisureBox .imgBox{
+    background: rgb(112, 108, 108);
+}
+.leisure .content .leisureBox .imgBox img{
+    opacity: 0.5;
+}
+.leisure .content .leisureBox .imgBox,
+.leisure .content .leisureBox .textBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leisure .content .leisureBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.leisure .content .leisureBox .textBox{
+    background: #333;
+    opacity: 0;
+    transition: .5s;
+}
+.leisure .content .leisureBox:hover .textBox{
+    opacity: 1;
+}
+.leisure .content .leisureBox .textBox h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.contact{
+    background: #333;
+    color: #00bcd4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contactForm{
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+}
+.contact .contactForm .row{
+    width: 100%;
+    display: flex;
+}
+.contact .contactForm .row .col50{
+    width: 50%;
+    margin: 10px;
+}
+.contact .contactForm .row .col100{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.contact .contactForm .row input,
+.contact .contactForm .row textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #444;
+    color: #fff;
+    font-size: .8rem;
+    resize: none;
+}
+.contact .contactForm .row textarea{
+    height: 100px;
+}
+.contact .contactForm .row input[type="submit"]{
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+@media screen and (max-width:991px){
+    .banner .imgSideBar{
+        display: none;
+    }
+    .banner .contentBox, .sidebar{
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText{
+        left: 40px;
+    }
+    .toggle{
+        right: 40px;
+    }
+    section {
+        padding: 40px;
+    }
+    .about .content {
+        flex-direction: column;
+    }
+    .about .content .textBox{
+        min-width: 100%;
+        width: 100%;
+    }
+    .about .content .imgBox{
+        margin-left: 0;
+    }
+    .works .content .worksBox {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .contact .contactForm {
+        width: 100%;
+    }
+    .contactForm .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact .contactForm .row .col50{
+        width: 100%;
+    }
+    .sidebar ul li a {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:500px){
+    .works .content .worksBox, 
+    .leisure .content .leisureBox{
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+    }
 }
