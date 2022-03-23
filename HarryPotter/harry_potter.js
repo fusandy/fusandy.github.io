@@ -54,7 +54,8 @@ searchBar.addEventListener("keyup", (event) => {
 
 async function getData() {
   // fetch API
-  const res = await fetch("http://hp-api.herokuapp.com/api/characters");
+  // const res = await fetch("http://hp-api.herokuapp.com/api/characters");
+  const res = await fetch("./data.json");
   dataList = await res.json();
   //   console.log("dataList:", dataList);
   dataList.splice(25);

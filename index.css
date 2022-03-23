@@ -33,6 +33,10 @@ section{
     padding: 100px;
     min-height: 100vh;
 }
+footer{
+    min-height: 20vh;
+    background: #333;
+}
 .banner{
     position: relative;
     width: 100%;
@@ -94,6 +98,7 @@ p{
     font-size: 0.9rem;
     margin: 20px 0;
     font-weight: 300;
+    line-height: 30px;
 }
 .btn{
     background:#00bcd4;
@@ -201,18 +206,18 @@ p{
     flex-wrap: wrap;
 }
 .works .content .worksBox{
-    padding: 40px 20px;
-    max-width: 340px;
-    margin: 20px;
+    padding: 40px 15px;
+    max-width: 270px;
+    margin: 20px 10px;
     transition: .5s;
-    text-align: center;
+    
     background-color: #f5f5f5;
 }
 .works .content .worksBox:hover{
     background: #333;
 }
 .works .content .worksBox img{
-    max-width: 300px;
+    max-width: 240px;
     transition: .5s;
 }
 .works .content .worksBox h2{
@@ -221,11 +226,13 @@ p{
     font-size: 20px;
     font-weight: 600;
     transition: .5s;
+    text-align: center;
 }
 .works .content .worksBox:hover h2{
     color: #fff;
 }
 .works .content .worksBox p{
+    font-size: .8rem;
     margin: 0;
     transition: .5s;
 }
@@ -291,6 +298,12 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.snsBox{
+    margin-top: 20px;
+}
+.snsBox a {
+    margin: 0 5px;
 }
 .contact .contactForm{
     position: relative;
