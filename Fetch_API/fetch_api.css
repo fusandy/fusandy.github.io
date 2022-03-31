@@ -138,12 +138,10 @@ li{
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 2px 2px 5px 2px rgb(175, 173, 173);
-
 }
 .content-img img{
     width: 100%;
 }
-
 @keyframes modalopen {
     from{ opacity: 0}
     to{opacity: 1}

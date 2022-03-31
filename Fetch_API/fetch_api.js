@@ -11,7 +11,7 @@ const boxContent = document.querySelector(".box-content");
 const showModal = (event) => {
   console.log(event.currentTarget);
   const id = event.currentTarget.dataset.id;
-  console.log("id:", id);
+  // console.log("id:", id);
 
   let result;
     result = list.find(v=>{
