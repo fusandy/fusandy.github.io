@@ -1,404 +1,407 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
-.toggle{
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: #333;
-    background-image: url('./src/imgs/menu.png');
-    background-size: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    z-index: 1000;
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #333;
+  background-image: url("./src/imgs/menu.png");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
 }
-.toggle.active{
-    background-image: url('./src/imgs/close.png');
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
+.toggle.active {
+  background-image: url("./src/imgs/close.png");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-section{
-    padding: 100px;
-    min-height: 100vh;
+section {
+  padding: 100px;
+  min-height: 100vh;
 }
-footer{
-    min-height: 20vh;
-    background: #333;
+footer {
+  min-height: 15vh;
+  background: #333;
 }
-.banner{
-    position: relative;
-    width: 100%;
+.banner {
+  position: relative;
+  width: 100%;
 }
-.banner .imgSideBar{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 500px;
-    height: 100%;
+.banner .imgSideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
 }
-.banner .imgSideBar img{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.banner .imgSideBar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.banner .contentBox, .sidebar{
- position: absolute;
- top: 0;
- right: 0;
- width: calc(100% - 500px);
- height: 100%;   
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 100px;
+.banner .contentBox,
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
 .logoText {
-    position: absolute;
-    top: 40px;
-    left: 100px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: #333;
-    color: #fff;
-    padding: 0 5px;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #333;
+  color: #fff;
+  padding: 0 5px;
 }
-.banner .contentBox h4{
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: 300;
+.banner .contentBox h4 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 300;
 }
-.banner .contentBox h4 span{
-    color: #00bcd4;
-    font-size: 1.5rem;
-    font-weight: 700;
+.banner .contentBox h4 span {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-.banner .contentBox h2{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #333;
-    line-height: 2.5rem;
+.banner .contentBox h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 2.5rem;
 }
-p{
-    font-size: 0.9rem;
-    margin: 20px 0;
-    font-weight: 300;
-    line-height: 30px;
+p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
-.btn{
-    background:#00bcd4;
-    color: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.5rem;
-    letter-spacing: 2px;
+.btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
 }
-.sidebar{
-    position: fixed;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    padding: 40px;
-    z-index: 100;   
-    right: -100%;
+.sidebar {
+  position: fixed;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 40px;
+  z-index: 100;
+  right: -100%;
 }
-.sidebar.active{
-    right: 0;
+.sidebar.active {
+  right: 0;
 }
 .sidebar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.sidebar ul li{
-    list-style: none;
+.sidebar ul li {
+  list-style: none;
 }
 .sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin: 10px 0 ;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 50px;
-    text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
-.sidebar ul li a:hover{
-    color: #00bcd4;
+.sidebar ul li a:hover {
+  color: #00bcd4;
 }
-.title{
-    width: 100%;
-    text-align: center;
+.title {
+  width: 100%;
+  text-align: center;
 }
 .title h2 {
-    position: relative;
-    color:  #00bcd4;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+  position: relative;
+  color: #00bcd4;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .title p {
-    max-width: 700px;
-    display: inline-block;
+  max-width: 700px;
+  display: inline-block;
 }
-.title h2::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform:  translateX(-50%);
-    bottom: -10px;
-    width: 80px;
-    height: 2px;
-    background: #333;;
+.title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 80px;
+  height: 2px;
+  background: #333;
 }
 .title.white h2,
-.title.white p{
-    color: #fff;
+.title.white p {
+  color: #fff;
 }
-.title.white h2::before{
-    background: #fff;;
+.title.white h2::before {
+  background: #fff;
 }
 .about {
-    background: #333;
+  background: #333;
 }
-.about .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 .about .content .textBox {
-    min-width: 49%;
-    width:49%;
+  min-width: 49%;
+  width: 49%;
 }
 .about .content .textBox p {
-    color: #fff;
+  color: #fff;
 }
 .about .content .imgBox {
-    margin-left: 40px;
+  margin-left: 40px;
 }
-.about .content .imgBox img{
-    max-width: 100%;
+.about .content .imgBox img {
+  max-width: 100%;
 }
 .works .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.works .content .worksBox{
-    padding: 40px 15px;
-    max-width: 270px;
-    margin: 20px 10px;
-    transition: .5s;
-    
-    background-color: #f5f5f5;
+.works .content .worksBox {
+  padding: 40px 15px;
+  max-width: 270px;
+  margin: 20px 10px;
+  transition: 0.5s;
+
+  background-color: #f5f5f5;
 }
-.works .content .worksBox:hover{
-    background: #333;
+.works .content .worksBox:hover {
+  background: #333;
 }
-.works .content .worksBox img{
-    max-width: 240px;
-    transition: .5s;
+.works .content .worksBox img {
+  max-width: 240px;
+  transition: 0.5s;
 }
-.works .content .worksBox h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: .5s;
-    text-align: center;
+.works .content .worksBox h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+  text-align: center;
 }
-.works .content .worksBox:hover h2{
-    color: #fff;
+.works .content .worksBox:hover h2 {
+  color: #fff;
 }
-.works .content .worksBox p{
-    font-size: .8rem;
-    margin: 0;
-    transition: .5s;
+.works .content .worksBox p {
+  font-size: 1rem;
+  margin: 0;
+  transition: 0.5s;
 }
-.works .content .worksBox:hover p{
-    color: #fff;
+.works .content .worksBox:hover p {
+  color: #fff;
 }
-.leisure .content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.leisure .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.leisure .content .leisureBox{
-    position: relative;
-    width: 265px;
-    height: 265px;
-    margin: 10px;
-    transition: .5s;
-    text-align: center;
+.leisure .content .leisureBox {
+  position: relative;
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  transition: 0.5s;
+  text-align: center;
 }
-.leisure .content .leisureBox .imgBox{
-    background: rgb(112, 108, 108);
+.leisure .content .leisureBox .imgBox {
+  background: rgb(112, 108, 108);
 }
-.leisure .content .leisureBox .imgBox img{
-    opacity: 0.5;
+.leisure .content .leisureBox .imgBox img {
+  opacity: 0.5;
 }
 .leisure .content .leisureBox .imgBox,
-.leisure .content .leisureBox .textBox{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.leisure .content .leisureBox .textBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.leisure .content .leisureBox img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.leisure .content .leisureBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.leisure .content .leisureBox .textBox{
-    background: #333;
-    opacity: 0;
-    transition: .5s;
+.leisure .content .leisureBox .textBox {
+  background: #333;
+  opacity: 0;
+  transition: 0.5s;
 }
-.leisure .content .leisureBox:hover .textBox{
-    opacity: 1;
+.leisure .content .leisureBox:hover .textBox {
+  opacity: 1;
 }
-.leisure .content .leisureBox .textBox h3{
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1rem;
+.leisure .content .leisureBox .textBox h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
 }
-.contact{
-    background: #333;
-    color: #00bcd4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contact {
+  background: #333;
+  color: #00bcd4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.snsBox{
-    margin-top: 20px;
+.snsBox {
+  margin-top: 20px;
 }
 .snsBox a {
-    margin: 0 5px;
+  margin: 0 5px;
 }
-.contact .contactForm{
-    position: relative;
-    width: 700px;
-    margin-top: 20px;
+.contact .contactForm {
+  position: relative;
+  width: 700px;
+  margin-top: 20px;
 }
-.contact .contactForm .row{
-    width: 100%;
-    display: flex;
+.contact .contactForm .row {
+  width: 100%;
+  display: flex;
 }
-.contact .contactForm .row .col50{
-    width: 50%;
-    margin: 10px;
+.contact .contactForm .row .col50 {
+  width: 50%;
+  margin: 10px;
 }
-.contact .contactForm .row .col100{
-    width: 100%;
-    margin: 10px;
-    text-align: center;
+.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
 }
 .contact .contactForm .row input,
-.contact .contactForm .row textarea{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: #444;
-    color: #fff;
-    font-size: .8rem;
-    resize: none;
+.contact .contactForm .row textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #444;
+  color: #fff;
+  font-size: 0.8rem;
+  resize: none;
 }
-.contact .contactForm .row textarea{
-    height: 100px;
+.contact .contactForm .row textarea {
+  height: 100px;
 }
-.contact .contactForm .row input[type="submit"]{
-    background: #00bcd4;
-    color: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    font-weight: 500;
-    letter-spacing: 2px;
-    cursor: pointer;
-    max-width: 150px;
+.contact .contactForm .row input[type="submit"] {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
 }
 
-@media screen and (max-width:991px){
-    .banner .imgSideBar{
-        display: none;
-    }
-    .banner .contentBox, .sidebar{
-        width: 100%;
-        padding: 40px;
-    }
-    .logoText{
-        left: 40px;
-    }
-    .toggle{
-        right: 40px;
-    }
-    section {
-        padding: 40px;
-    }
-    .about .content {
-        flex-direction: column;
-    }
-    .about .content .textBox{
-        min-width: 100%;
-        width: 100%;
-    }
-    .about .content .imgBox{
-        margin-left: 0;
-    }
-    .works .content .worksBox {
-        padding: 30px 20px;
-        margin: 10px;
-    }
-    .contact .contactForm {
-        width: 100%;
-    }
-    .contactForm .row{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .contact .contactForm .row .col50{
-        width: 100%;
-    }
-    .sidebar ul li a {
-        font-size: 1rem;
-    }
+@media screen and (max-width: 991px) {
+  .banner .imgSideBar {
+    display: none;
+  }
+  .banner .contentBox,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+  .logoText {
+    left: 40px;
+  }
+  .toggle {
+    right: 40px;
+  }
+  section {
+    padding: 40px;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .about .content .textBox {
+    min-width: 100%;
+    width: 100%;
+  }
+  .about .content .imgBox {
+    margin-left: 0;
+  }
+  .works .content .worksBox {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  .contact .contactForm {
+    width: 100%;
+  }
+  .contactForm .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact .contactForm .row .col50 {
+    width: 100%;
+  }
+  .sidebar ul li a {
+    font-size: 1rem;
+  }
 }
-@media screen and (max-width:500px){
-    .works .content .worksBox, 
-    .leisure .content .leisureBox{
-        max-width: 100%;
-        width: 100%;
-        margin: 10px 0;
-    }
+@media screen and (max-width: 500px) {
+  .works .content .worksBox,
+  .leisure .content .leisureBox {
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
