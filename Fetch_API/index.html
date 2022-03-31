@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harry Potter API</title>
-    <link rel="stylesheet" href="./harry_potter.css" />
+    <title>Fetch API</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fetch_api.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Harry Potter Characters</h1>
+      <h1>Fetch API Address Book</h1>
       <div id="searchWrapper">
         <input
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Search for a character"
+          placeholder="Search..."
         />
       </div>
       <ul id="charactersList"></ul>
@@ -25,17 +29,11 @@
     <div class="modal-container" id="modal-container">
       <div class="modal-box">
         <div class="box-top">
-          <div class="title">Character Introduction</div>
+          <div class="title">Introduction</div>
           <div id="closeBtn" onclick="closeModal(event)">&times;</div>
         </div>
         <div class="box-content">
-          <div class="content">
-            <h4>Harry Potter</h4>
-            <p>Gender:</p>
-            <p>House:</p>
-            <p>Date of Birth:</p>
-            <p>Actor:</p>
-          </div>
+          <div class="content"></div>
           <div class="content-img">
             <img
               src="http://hp-api.herokuapp.com/images/harry.jpg"
@@ -51,6 +49,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./harry_potter.js"></script>
+    <script src="./fetch_api.js"></script>
   </body>
 </html>
