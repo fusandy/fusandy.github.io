@@ -1,373 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life8</title>
     <!-- BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/ae4b6c5fc0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ae4b6c5fc0.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./Life8_BS.css">
+    <link rel="stylesheet" href="./Life8_BS.css" />
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- NAV -->
     <nav>
-        <div class="container" id="top">
-            <!-- Mobile Nav Top -->
-            <div class="row d-flex justify-content-between">
-                <div class="col-4">
-                    <div class="mobile-nav-top-left pt-3 d-flex justify-content-start align-items-center d-lg-none">
-                        <img src="https://www.life8.com.tw/UserFiles/Custom/m/images/ToolsIconMenu.png" alt="bars"> 
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="mobileLogo d-flex justify-content-center align-items-center d-lg-none">
-                        <img src="./imgs/life8logo.png" alt="mobileLogo" width="130px">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="mobile-nav-top-right pt-4 d-flex justify-content-end align-items-center d-lg-none">
-                        <div class="itemsNumber">0</div>
-                        <img src="https://www.life8.com.tw/UserFiles/Custom/m/images/ToolsIconCart.gif" alt="shoppingCart" class="mobileShoppingCart">
-                    </div>
-                </div>
+      <div class="container" id="top">
+        <!-- Mobile Nav Top -->
+        <div class="row d-flex justify-content-between">
+          <div class="col-4">
+            <div
+              class="mobile-nav-top-left pt-3 d-flex justify-content-start align-items-center d-lg-none"
+            >
+              <img
+                src="https://www.life8.com.tw/UserFiles/Custom/m/images/ToolsIconMenu.png"
+                alt="bars"
+              />
             </div>
-            <!-- Mobile Nav Bottom -->
-            <div class="mobile-nav-link d-block d-lg-none mt-3">
-                <ul class="list-unstyled d-flex justify-content-center">
-                    <li><a class="text-dark font-weight-bold mx-2" href="#">鞋款</a>|</li>
-                    <li><a class="text-dark font-weight-bold mx-2" href="#">服裝</a>|</li>
-                    <li><a class="text-dark font-weight-bold mx-2" href="#">配件</a>|</li>
-                    <li><a class="text-dark font-weight-bold mx-2" href="#">品牌</a>|</li>
-                    <li><a class="text-dark font-weight-bold mx-2" href="#">ALL WEARS</a></li>
-                </ul>
+          </div>
+          <div class="col-4">
+            <div
+              class="mobileLogo d-flex justify-content-center align-items-center d-lg-none"
+            >
+              <img src="./imgs/life8logo.png" alt="mobileLogo" width="130px" />
             </div>
-            <!-- Web Nav Top  -->
-            <div class="row">
-                <div class="webLogo d-none d-lg-block">
-                    <a href="#"><img src="./imgs/life8logo.png" alt="webLogo" width="250px"></a>
-                </div>
+          </div>
+          <div class="col-4">
+            <div
+              class="mobile-nav-top-right pt-4 d-flex justify-content-end align-items-center d-lg-none"
+            >
+              <div class="itemsNumber">0</div>
+              <img
+                src="https://www.life8.com.tw/UserFiles/Custom/m/images/ToolsIconCart.gif"
+                alt="shoppingCart"
+                class="mobileShoppingCart"
+              />
             </div>
-            <!-- Web Nav Bottom -->
-            <div class="web-nav-link d-none d-lg-block mb-3">
-                <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col-1">
-                        <div class="web-nav-link-left d-flex align-items-center">
-                            <i class="fas fa-search"></i>
-                            <form action=""><input type="text" class="search" placeholder="SEARCH"></form>
-                        </div>
-                    </div>
-                    <div class="col-10">
-                        <div class="web-nav-link-middle pt-3 px-4">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li><a href="#">SHOES</a></li>
-                                <li><a href="#">CLOTHES</a></li>
-                                <li><a href="#">BAGS</a></li>
-                                <li><a href="#">ACCESSORIES</a></li>
-                                <li><a href="#">ALL WEARS</a></li>
-                                <li><a href="#">BRAND</a></li>
-                                <li><a href="#">STORES</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="web-nav-link-right d-flex justify-content-end align-items-center">
-                            <div class="webShoppingCart">
-                                <img src="./imgs/bag.png" alt="shoppingCart" class="webShoppingCart">
-                            </div>
-                            <i class="fas fa-user pt-1"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Mobile Nav Bottom -->
+        <div class="mobile-nav-link d-block d-lg-none mt-3">
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li>
+              <a class="text-dark font-weight-bold mx-2" href="#">鞋款</a>|
+            </li>
+            <li>
+              <a class="text-dark font-weight-bold mx-2" href="#">服裝</a>|
+            </li>
+            <li>
+              <a class="text-dark font-weight-bold mx-2" href="#">配件</a>|
+            </li>
+            <li>
+              <a class="text-dark font-weight-bold mx-2" href="#">品牌</a>|
+            </li>
+            <li>
+              <a class="text-dark font-weight-bold mx-2" href="#">ALL WEARS</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Web Nav Top  -->
+        <div class="row">
+          <div class="webLogo d-none d-lg-block">
+            <a href="#"
+              ><img src="./imgs/life8logo.png" alt="webLogo" width="250px"
+            /></a>
+          </div>
+        </div>
+        <!-- Web Nav Bottom -->
+        <div class="web-nav-link d-none d-lg-block mb-3">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-1">
+              <div class="web-nav-link-left d-flex align-items-center">
+                <i class="fas fa-search"></i>
+                <form action="">
+                  <input type="text" class="search" placeholder="SEARCH" />
+                </form>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="web-nav-link-middle pt-3 px-4">
+                <ul class="list-unstyled d-flex justify-content-between">
+                  <li><a href="#">SHOES</a></li>
+                  <li><a href="#">CLOTHES</a></li>
+                  <li><a href="#">BAGS</a></li>
+                  <li><a href="#">ACCESSORIES</a></li>
+                  <li><a href="#">ALL WEARS</a></li>
+                  <li><a href="#">BRAND</a></li>
+                  <li><a href="#">STORES</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1">
+              <div
+                class="web-nav-link-right d-flex justify-content-end align-items-center"
+              >
+                <div class="webShoppingCart">
+                  <img
+                    src="./imgs/bag.png"
+                    alt="shoppingCart"
+                    class="webShoppingCart"
+                  />
+                </div>
+                <i class="fas fa-user pt-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- NAV end  -->
 
     <!-- BANNER  -->
     <div class="container">
-        <div class="banner-wrap">
-            <div class="banner-img d-flex">
-                <img src="./imgs/banner (1).jpg" alt="logo" class="active">
-                <img src="./imgs/banner (2).jpg" alt="logo">
-                <img src="./imgs/banner (3).jpg" alt="logo">
-                <img src="./imgs/banner (4).jpg" alt="logo">
-                <img src="./imgs/banner (5).jpg" alt="logo">
-                <img src="./imgs/banner (6).jpg" alt="logo">
-                <img src="./imgs/banner (7).jpg" alt="logo">
-                <img src="./imgs/banner (8).jpg" alt="logo">
-                <img src="./imgs/banner (9).jpg" alt="logo">
-                <img src="./imgs/banner (10).jpg" alt="logo">
-                <img src="./imgs/banner (11).jpg" alt="logo">
-                <img src="./imgs/banner (12).jpg" alt="logo">
-                <img src="./imgs/banner (13).jpg" alt="logo">                
-            </div>
+      <div class="banner-wrap">
+        <div class="banner-img d-flex">
+          <img src="./imgs/banner (1).jpg" alt="logo" />
+          <img src="./imgs/banner (2).jpg" alt="logo" />
+          <img src="./imgs/banner (3).jpg" alt="logo" />
+          <img src="./imgs/banner (4).jpg" alt="logo" />
+          <img src="./imgs/banner (5).jpg" alt="logo" />
+          <img src="./imgs/banner (6).jpg" alt="logo" />
+          <img src="./imgs/banner (7).jpg" alt="logo" />
+          <img src="./imgs/banner (8).jpg" alt="logo" />
+          <img src="./imgs/banner (9).jpg" alt="logo" />
+          <img src="./imgs/banner (10).jpg" alt="logo" />
+          <img src="./imgs/banner (11).jpg" alt="logo" />
+          <img src="./imgs/banner (12).jpg" alt="logo" />
+          <img src="./imgs/banner (13).jpg" alt="logo" />
+          <img src="./imgs/banner (1).jpg" alt="logo" />
         </div>
-            <div>
-                <ul class="wrap-dot list-unstyled d-flex justify-content-center align-items-center mt-2">
-                    <li class="dot" style="background-color: rgb(87, 87, 87);"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                    <li class="dot"></li>
-                </ul>
-            </div>
+      </div>
+      <div>
+        <ul
+          class="wrap-dot list-unstyled d-flex justify-content-center align-items-center mt-2"
+        >
+          <li class="dot" style="background-color: rgb(87, 87, 87)"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+        </ul>
+      </div>
     </div>
     <!-- BANNER end  -->
 
     <!-- COLLECTION -->
     <div class="container">
-        <h6>COLLECTION</h6>
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="collection mb-3">
-                    <img src="./imgs/left-1.jpeg" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="collection mb-3">
-                    <img src="./imgs/right-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="collection mb-3">
-                    <img src="./imgs/left-2.gif" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="collection mb-3">
-                    <img src="./imgs/right-2.gif" alt="">
-                </div>
-            </div>
+      <h6>COLLECTION</h6>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="collection mb-3">
+            <img src="./imgs/left-1.jpeg" alt="" />
+          </div>
         </div>
+        <div class="col-12 col-lg-6">
+          <div class="collection mb-3">
+            <img src="./imgs/right-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="collection mb-3">
+            <img src="./imgs/left-2.gif" alt="" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="collection mb-3">
+            <img src="./imgs/right-2.gif" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- COLLECTION end -->
 
     <!-- EVENT -->
     <div class="container">
-        <h6>EVENT</h6>
-        <div class="row">
-            <div class="col-6 col-lg-3">
-                <div class="event mb-3">
-                    <img src="./imgs/index-01.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="event mb-3">
-                    <img src="./imgs/index-02.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                <div class="event mb-3">
-                    <img src="./imgs/index-03.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-lg-3">
-                 <div class="event mb-3">
-                       <img src="./imgs/index-04.jpg" alt="">
-                  </div>
-            </div>
+      <h6>EVENT</h6>
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="event mb-3">
+            <img src="./imgs/index-01.jpg" alt="" />
+          </div>
         </div>
+        <div class="col-6 col-lg-3">
+          <div class="event mb-3">
+            <img src="./imgs/index-02.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="event mb-3">
+            <img src="./imgs/index-03.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="event mb-3">
+            <img src="./imgs/index-04.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- EVENT end -->
 
     <!-- STORE INFORMATION -->
     <div class="container mb-5">
-        <h6>STORE INFORMATION</h6>
-            <div class="row">
-                <div class="col-6 col-lg-4">
-                    <div class="store-information mb-3">
-                        <img src="./imgs/northern-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="store-information mb-3">
-                        <img src="./imgs/central.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="store-information mb-3">
-                        <img src="./imgs/southern.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+      <h6>STORE INFORMATION</h6>
+      <div class="row">
+        <div class="col-6 col-lg-4">
+          <div class="store-information mb-3">
+            <img src="./imgs/northern-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="store-information mb-3">
+            <img src="./imgs/central.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-6 col-lg-4">
+          <div class="store-information mb-3">
+            <img src="./imgs/southern.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- STORE INFORMATION end -->
 
     <!-- FOOTER -->
     <footer>
-        <!-- Mobile Footer -->
+      <!-- Mobile Footer -->
+      <div class="row">
+        <div class="col-12 d-block d-lg-none">
+          <div class="mobile-cotact">
+            <img src="//www.life8-photo.com/icon/Mobile-line-g.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- Web Footer -->
+      <div class="container d-none d-lg-block">
         <div class="row">
-            <div class="col-12 d-block d-lg-none">
-                <div class="mobile-cotact">
-                    <img src="//www.life8-photo.com/icon/Mobile-line-g.svg">
-                </div>
+          <!-- Left -->
+          <div class="col-8 d-flex">
+            <div class="col-4">
+              <p>ABOUT LIFE8</p>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">品牌精神</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">公司資訊</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">體驗門市</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">人才招募</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">投資人專區</a>
+                </li>
+              </ul>
             </div>
-        </div>
-        <!-- Web Footer -->
-        <div class="container d-none d-lg-block">
-            <div class="row">
-                <!-- Left -->
-                <div class="col-8 d-flex">
-                    <div class="col-4">
-                        <p>ABOUT LIFE8</p>
-                        <ul class="list-unstyled">
-                            <li class="py-1"><a href="#" style="text-decoration: none;">品牌精神</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">公司資訊</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">體驗門市</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">人才招募</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">投資人專區</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <p>INFO</p>
-                        <ul class="list-unstyled">
-                            <li class="py-1"><a href="#" style="text-decoration: none;">常見問題FAQ</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">滿1000免運</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">退貨申請流程</a></li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">Life8 Collection</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <p>CALL CENTER</p>
-                        <ul class="list-unstyled">
-                            <li class="py-1"> <img src="https://www.life8-photo.com/icon/2016/menu/phone.png" alt="" class="pb-1"> 04-7771100 </li>
-                            <li class="py-1">Mon-Friday 9:00-18:00 </li>
-                            <li class="py-1">Lunch Time 12:00-13:00/Off</li>
-                            <li class="py-1"><a href="#" style="text-decoration: none;">線上客服</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- right -->
-                <div class="col-4">
-                    <div class="col-12" style="transform: translateX(30%);">
-                        <p>FOLLOW US</p>
-                        <div class="SNS-icon">
-                            <img src="https://www.life8-photo.com/icon/2016/menu/share.png" alt="" width="150px">
-                        </div>
-                        <div class="link-to-mobile pt-2">
-                            <a href="#">切換至手機版</a>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="col-4">
+              <p>INFO</p>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">常見問題FAQ</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">滿1000免運</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">退貨申請流程</a>
+                </li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">Life8 Collection</a>
+                </li>
+              </ul>
             </div>
+            <div class="col-4">
+              <p>CALL CENTER</p>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <img
+                    src="https://www.life8-photo.com/icon/2016/menu/phone.png"
+                    alt=""
+                    class="pb-1"
+                  />
+                  04-7771100
+                </li>
+                <li class="py-1">Mon-Friday 9:00-18:00</li>
+                <li class="py-1">Lunch Time 12:00-13:00/Off</li>
+                <li class="py-1">
+                  <a href="#" style="text-decoration: none">線上客服</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-4">
+            <div class="col-12" style="transform: translateX(30%)">
+              <p>FOLLOW US</p>
+              <div class="SNS-icon">
+                <img
+                  src="https://www.life8-photo.com/icon/2016/menu/share.png"
+                  alt=""
+                  width="150px"
+                />
+              </div>
+              <div class="link-to-mobile pt-2">
+                <a href="#">切換至手機版</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- FOOTER end -->
 
     <!-- WEB right fixed icon -->
     <div class="mobile-line-icon d-none d-md-block">
-        <img src="//www.life8-photo.com/icon/PC-line.svg">
+      <img src="//www.life8-photo.com/icon/PC-line.svg" />
     </div>
     <div class="mobile-up-icon d-none d-md-block leave">
-        <a href="#top"><img src="https://www.life8-photo.com/icon/2016/menu/back.png" alt=""></a>
+      <a href="#top"
+        ><img src="https://www.life8-photo.com/icon/2016/menu/back.png" alt=""
+      /></a>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="./slick/slick.js"></script>
-    
+
     <script>
-        let index = 0;
-        let lastImg = 0;
-        let myInterval = null;
+      let index = 0;
+      let lastImg = 0;
+      let myInterval = null;
 
-        // click event
-        $('.wrap-dot li').click(function(){
-            index = $(this).index();
-            console.log('index', $(this).index());
-            $(this).css('background','rgb(87, 87, 87)').siblings().css('background','rgb(219, 219, 219)');
+      // click event
+      $(".wrap-dot li").click(function () {
+        index = $(this).index();
+        console.log("index", $(this).index());
+        $(this)
+          .css("background", "rgb(87, 87, 87)")
+          .siblings()
+          .css("background", "rgb(219, 219, 219)");
 
-            // console.log($('.banner-img img').eq(index));
-            
-            console.log('lastImg', lastImg);
-            $('.banner-img img').eq(lastImg).addClass('visual-hidden');
+        const moveX = index * -100 + "%";
+        console.log("moveX:", moveX);
+        $(".banner-img").css("transform", `translateX(${moveX})`);
+      });
 
-            setTimeout(function(){
-                $('.banner-img img').eq(lastImg).removeClass('active').removeClass('visual-hidden');
-                $('.banner-img img').eq(index).addClass('active');
-                lastImg = index;
-            },400)
-        });
+      // autoplay
+      function startInterval() {
+        myInterval = setInterval(function () {
+          index++;
+          //   if (index >= 13) {
+          //     index = 0;
+          //   }
 
-        // autoplay
-        function startInterval(){
-            myInterval = setInterval(function(){
+          $(".wrap-dot li")
+            .eq(index === 13 ? 0 : index)
+            .css("background", "rgb(87, 87, 87)")
+            .siblings()
+            .css("background", "rgb(219, 219, 219)");
 
-            index ++;
-            if(index > 12){
-                index = 0;
-            }
-            // console.log('index:', index);
-            // $('.banner-img img').eq(index).addClass('active')
-            // .siblings().removeClass('active');
+          const moveX = index * -100 + "%";
+          console.log("moveX:", moveX);
+          $(".banner-img")
+            .css("transition", "1.5s")
+            .css("transform", `translateX(${moveX})`);
+        }, 3000);
+      }
 
-            $('.wrap-dot li').eq(index)
-            .css('background','rgb(87, 87, 87)')
-            .siblings().css('background','rgb(219, 219, 219)');
-
-            $('.banner-img img').eq(lastImg).addClass('visual-hidden');
-
-            setTimeout(function(){
-                $('.banner-img img').eq(lastImg).removeClass('active').removeClass('visual-hidden');
-                $('.banner-img img').eq(index).addClass('active');
-                lastImg = index;
-            },400)
-            },1500);
+      $(".banner-img").on("transitionend", function () {
+        console.log("transitionend");
+        if (index >= 13) {
+          $(".banner-img")
+            .css("transition", "none")
+            .css("transform", "translateX(0px)");
+          index = 0;
         }
-        
-        startInterval();
+      });
 
-        // stop autoplay while mouseenter
-        $('.banner-wrap').hover(function(){
-            clearInterval(myInterval);
-        }, function(){
-            startInterval();
-        })
+      startInterval();
 
+      // stop autoplay while mouseenter
+      $(".banner-wrap").hover(
+        function () {
+          clearInterval(myInterval);
+        },
+        function () {
+          startInterval();
+        }
+      );
 
-        // Back to Top icon
-        $(window).scroll(function(){
-            const scrollTop = $(window).scrollTop();
-            const top = $('.mobile-up-icon').offset().top;
-            // const bottom = $('.mobile-up-icon').offset().top;
-            
-            // console.log('window height', $(window).height);
-            console.log('scrolltop', $(window).scrollTop());
-            console.log('offset top', $('.mobile-up-icon').offset().top);
-            console.log('offset left', $('.mobile-up-icon').offset().left);
+      // Back to Top icon
+      $(window).scroll(function () {
+        const scrollTop = $(window).scrollTop();
+        const top = $(".mobile-up-icon").offset().top;
+        // const bottom = $('.mobile-up-icon').offset().top;
 
-            if(scrollTop > top/8){
-                $('.mobile-up-icon').removeClass("leave");
-            }else{
-                $('.mobile-up-icon').addClass("leave");
-            }
-        })
-        $('.mobile-up-icon').click(function(){
-            $(body).scrollTop = 0;
-        })
+        // console.log('window height', $(window).height);
+        console.log("scrolltop", $(window).scrollTop());
+        console.log("offset top", $(".mobile-up-icon").offset().top);
+        console.log("offset left", $(".mobile-up-icon").offset().left);
 
-        
+        if (scrollTop > top / 8) {
+          $(".mobile-up-icon").removeClass("leave");
+        } else {
+          $(".mobile-up-icon").addClass("leave");
+        }
+      });
+      $(".mobile-up-icon").click(function () {
+        $(body).scrollTop = 0;
+      });
     </script>
-    
-</body>
+  </body>
 </html>
