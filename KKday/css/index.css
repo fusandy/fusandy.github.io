@@ -2,10 +2,6 @@
 header {
   border-bottom: 1px solid #e5e6e9a8;
 }
-header .row {
-  padding-left: 9rem;
-  padding-right: 9rem;
-}
 header .col {
   display: flex;
   justify-content: space-between;
@@ -47,7 +43,6 @@ header .col {
 }
 /* Navbar */
 .navbar-category {
-  padding-left: 10rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -62,11 +57,11 @@ header .col {
   color: #26bec9;
 }
 .navbar-category .ticket {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 .navbar-category-item {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-left: 0.8rem;
   padding-left: 0.8rem;
@@ -138,12 +133,12 @@ input::-webkit-input-placeholder {
 }
 /* 熱門活動分類 */
 .category-card {
-  width: 9rem;
-  height: 170px;
+  width: 175px;
+  height: 200px;
   overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
-  margin-right: 0.7rem;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px 5px rgba(241, 237, 237, 0.685);
+  margin-right: 1rem;
 }
 .category-card img {
   width: 100%;
@@ -152,7 +147,7 @@ input::-webkit-input-placeholder {
   transition: 0.3s;
 }
 .category-card-title {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
   padding: 0.5rem 0.8rem;
@@ -160,16 +155,20 @@ input::-webkit-input-placeholder {
 .category-card:hover img {
   opacity: 0.8;
 }
+.carousel-wrap {
+  overflow: hidden;
+  height: 220px;
+  padding-bottom: 20px;
+  position: relative;
+}
 .hot-activity-category-card-carousel {
   display: flex;
   justify-content: start;
   align-items: center;
-  overflow: hidden;
-  height: 200px;
 }
 /* 最新旅遊優惠 */
 .latest-discount-card {
-  width: 18.5rem;
+  width: 370px;
   height: 170px;
   overflow: hidden;
   border-radius: 5px;
@@ -190,13 +189,20 @@ input::-webkit-input-placeholder {
 }
 /* 熱門城市 */
 .post-card {
-  width: 18rem;
+  width: 180px;
   height: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
   overflow: hidden;
   position: relative;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  transition: 0.5s;
+}
+.post-card:hover {
+  width: 370px;
+}
+.post-card:hover .tag {
+  opacity: 1;
 }
 .post-card img {
   width: 100%;
@@ -216,6 +222,8 @@ input::-webkit-input-placeholder {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
+  opacity: 0;
+  transition: 0.5s;
 }
 .tag-item {
   font-size: 0.5rem;
@@ -238,19 +246,21 @@ input::-webkit-input-placeholder {
 /* 最近瀏覽 */
 .latest-view-card {
   width: 400px;
-  height: 110px;
+  height: auto;
   display: flex;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 2px 5px 10px rgba(221, 218, 218, 0.685);
   margin-right: 1.2rem;
+  padding: 20px 10px;
   position: relative;
 }
 .latest-view-product-img {
-  width: 150px;
-  height: 90px;
+  width: 160px;
+  height: 110px;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 .latest-view-product-img img {
   width: 100%;
@@ -259,7 +269,7 @@ input::-webkit-input-placeholder {
 }
 .latest-view-product-title {
   width: 300px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #666;
   font-weight: bold;
   margin: 0.5rem;
@@ -268,9 +278,10 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 25px;
 }
 .latest-view-product-price {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding-top: 5px;
   color: #000;
   font-weight: bold;
@@ -292,9 +303,9 @@ input::-webkit-input-placeholder {
 }
 .label-number {
   position: absolute;
-  top: 17%;
+  top: 18%;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: white;
 }
 /* 為什麼選擇KKday? */
@@ -307,7 +318,7 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5rem 9rem;
+  padding: 2.5rem 0;
   position: relative;
 }
 .why-area-text {
@@ -348,7 +359,7 @@ input::-webkit-input-placeholder {
 }
 /* Footer Link */
 .footer-link .container {
-  padding: 2.5rem 9rem;
+  padding: 2.5rem 0;
 }
 .footer-link-title {
   color: #333;
