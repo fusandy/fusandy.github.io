@@ -4,226 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandy's Portfolio | Responsive Website Design</title>
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/ae4b6c5fc0.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Sandy's Portfolio</title>
+    <script src="https://kit.fontawesome.com/ae4b6c5fc0.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="./style/aos.css">
+    <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
-    <div class="toggle" onclick="toggleMenu()"></div>
-    <section class="banner" id="home">
-      <div class="imgSideBar leave">
-        <img src="./src/imgs/IMG_0084.jpg" />
+    <div class="navbar">
+      <div class="havbar-ham">
+        <img src="public/images/menu.svg"/>
       </div>
-      <!-- <div class="contentBox">
-        <h5 class="logoText">My_Portfolio</h5>
-        <div>
-          <h4><span>Hello</span>, I'm</h4>
-          <h2>Sandy</h2>
-          <h4>I'm a Front End Web Developer.</h4>
-          <p class="introText">
-            「 細膩、積極、行動力、領導力」是我的代名詞。<br />
-            喜歡思考與邏輯整合，追求跨領域的學習，掌握機會提升自我價值。<br />
-            獨立切版(含RWD)，React框架多人協作專案，PHP&MySQL後端資料庫建構。
-          </p>
-          <a href="#about" class="btn">About Me</a>
-        </div>
-      </div> -->
+      <a class="navbar-text" id='aboutTab' href="#about">ABOUT</a>
+      <a class="navbar-text" id='portfolioTab' href="#portfolio">PORTFOLIO</a>
+      <a class="navbar-text" id='contactTab' href="#contact">CONTACT</a>
+    </div>
+
+    <section id="about">
+      <div class="profile-text">
+        <div class="given-name" data-aos="fade-right" data-aos-delay="20" data-aos-duration="1000">Hi,</div>
+        <div class="family-name" data-aos="fade-left" data-aos-delay="20" data-aos-duration="2000">I'm SANDY.</div>
+        <div class="self-intro" data-aos="fade-up" data-aos-duration="2500"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos, error, voluptatum dolorum quasi quia nostrum harum rerum reprehenderit sapiente distinctio laboriosam eum impedit fugit. Praesentium atque reprehenderit ex cumque!</div>
+      </div>
+      
+      <div class="profile-img">
+        <img src="public/images/profile.jpg">
+      </div>
     </section>
 
-    <!-- <section class="about" id="about">
-      <div class="title white">
-        <h2>About ME</h2>
-        <p>我是符中涵，擁有一顆膽大卻又細膩的心。</p>
-      </div>
-      <div class="content">
-        <div class="textBox">
-          <p>
-            畢業於國立台北大學，大學期間擔任系學會副會長，啦啦隊隊長，學生會活動部，國際處外語志工。在團體生活中，具備領導與組織能力，
-            且注重細節，帶領團隊達成任務。
-            <br /><br />
-            曾任職於Trip.com台灣分公司，一年半運營業務助理，晉升業務經理，主要負責在地旅宿的業務接洽與維護，對外協調與談判、對內跨部門與跨國籍的溝通協作，藉此培養出靈敏的洞察力與談判力。
-            <br /><br />
-            追求職涯規劃與目標，選擇資策會的前端課程，透過扎實的培訓，包含RWD響應式獨立切版不是問題，並且有多人協作的React專案經驗。
-            <br /><br />
-            未來仍會繼續學習，隨著工作需求以及個人成長，也規劃學習Typescript、Webpack，Tailwind，Vue/Angular
-            Framework等其他前端語言。期望隨著經驗累積，成為專業的前端工程師！
-          </p>
-        </div>
-        <div class="imgBox">
-          <img src="./src/imgs/IMG_5699.jpg" />
-        </div>
-      </div>
-    </section> -->
+    <section id="portfolio">
+      portfolio
+    </section>
 
-    <!-- <section class="works" id="works">
-      <div class="title">
-        <h2>My Works</h2>
-        <p>學習前端技能半年期間，目前累積六個練習。</p>
-      </div>
-      <div class="content">
-        <div class="worksBox">
-          <a href="#">
-            <img src="./src/imgs/primeal.png" alt="primeal" />
-            <h2>資策會團體期末專題</h2>
-            <p>
-              ▪ 團體分工負責首頁, 最新消息, 活動報名
-              <br />
-              ▪ 前端框架React.js
-              <br />
-              ▪ 後端架設node.js, MySQL
-              <br />
-              ▪ 自行撰寫RESTful APIs
-              <br />
-              ▪ 套件運用 nodemailer, React-big-calendar
-            </p>
-          </a>
-        </div>
-        <div class="worksBox">
-          <a href="https://fusandy.github.io/Life8/">
-            <img src="./src/imgs/life8.jpg" alt="life8" />
-            <h2>Life 8 RWD切版</h2>
-            <p>
-              ▪ 首次獨立切版的模仿作品
-              <br />
-              ▪ Flexbox與Bootstrap完成RWD
-              <br />
-              ▪ jQuery完成自動輪播牆
-            </p>
-          </a>
-        </div>
-        <div class="worksBox">
-          <a href="https://fusandy.github.io/KKday/">
-            <img src="./src/imgs/kkday.jpg" alt="kkday" />
-            <h2>KKday PC版靜態手刻</h2>
-            <p>
-              ▪ 全手刻的PC版練習作品
-              <br />
-              ▪ Flexbox排版
-              <br />
-              ▪ pseudo偽元素製作收藏按鈕
-            </p>
-          </a>
-        </div>
-        <div class="worksBox">
-          <a href="https://fusandy.github.io/Fetch_API/">
-            <img src="./src/imgs/fetch_api.jpg" alt="fetch" />
-            <h2>randomuser API</h2>
-            <p>
-              ▪ AJAX
-              <br />
-              ▪ 陣列map生成DOM
-              <br />
-              ▪ Change Event Search Bar
-              <br />
-              ▪ Click Event Modal
-            </p>
-          </a>
-        </div>
-        <div class="worksBox">
-          <a href="https://fusandy.github.io/GridSystem/">
-            <img src="./src/imgs/grid.jpg" alt="grid" />
-            <h2>Grid System</h2>
-            <p>
-              ▪ Grid System練習
-              <br />
-              ▪ grid-template-columns
-              <br />
-              ▪ grid-template-rows
-              <br />
-              ▪ span 分割
-            </p>
-          </a>
-        </div>
-        <div class="worksBox">
-          <a href="#">
-            <img src="./src/imgs/url-shortener.jpg" alt="grid" />
-            <h2>Link Shortener Website</h2>
-            <p>
-              ▪ React App
-              <br />
-              ▪ Material UI套件
-              <br />
-              ▪ shrtcode API
-              <br />
-              ▪ clipboard API
-            </p>
-          </a>
-        </div>
-      </div>
-    </section> -->
+    <section id="contact">
+      <div class="contact-content">
+        <div>
+          <h1 class="contact-title">Contact</h1>
+          <p>Looking forward to hear from you.</p>
 
-    <!-- <section class="leisure" id="leisure">
-      <div class="title">
-        <h2>Leisure Time</h2>
-        <p>
-          工作與休閒取得平衡
-          <br />
-          熱愛戶外活動
-          <br />
-          跳舞是我的嗜好、興趣
-          <br />
-          也喜歡料理美食
-          <br />
-        </p>
-      </div>
-      <div class="content">
-        <div class="leisureBox">
-          <div class="imgBox">
-            <img src="./src/imgs/hiking.JPG" alt="" />
-          </div>
-          <div class="textBox">
-            <h3>HIKING</h3>
-          </div>
-        </div>
-        <div class="leisureBox">
-          <div class="imgBox">
-            <img src="./src/imgs/dancing.jpg" alt="" />
-          </div>
-          <div class="textBox">
-            <h3>DANCING</h3>
-          </div>
-        </div>
-        <div class="leisureBox">
-          <div class="imgBox">
-            <img src="./src/imgs/camping.jpg" alt="" />
-          </div>
-          <div class="textBox">
-            <h3>CAMPING</h3>
-          </div>
-        </div>
-        <div class="leisureBox">
-          <div class="imgBox">
-            <img src="./src/imgs/cooking.JPG" alt="" />
-          </div>
-          <div class="textBox">
-            <h3>COOKING</h3>
-          </div>
-        </div>
-      </div>
-    </section> -->
+          <div class="contact-title">Phone</div>
+          <p>+886-963-379-254</p>
 
-    <!-- <footer class="contact" id="contact">
-      <div class="title white">
-        <h2>Contact</h2>
-        <div class="snsBox">
-          <a href="https://www.facebook.com/chunghan.fu">
-            <img src="./src/imgs/facebook.svg" alt="facebook" />
-          </a>
-          <a href="https://www.instagram.com/ssssandy_93/">
-            <img src="./src/imgs/instagram.svg" alt="instagram" />
-          </a>
-          <a href="mailto:fusandy8260@gmail.com">
-            <img src="./src/imgs/email.svg" alt="email" />
-          </a>
+          <div class="contact-title">Email</div>
+          <p>fusandy8260@gmail.com</p>
+        </div>
+        <div>
+          <div class="contact-row">
+            <div class="contact-column">
+              <p class="contact-title">First Name</p>
+              <input type='text' />
+            </div>
+            <div class="contact-column">
+              <p class="contact-title">Last Name</p>
+              <input type='text'/>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-column">
+              <p class="contact-title">Email</p>
+              <input type='email'/>
+            </div>
+            <div class="contact-column">
+              <p class="contact-title">Subject</p>
+              <input type='text'/>
+            </div>
+          </div>
+          <p class="contact-title">Message</p>
+          <div class="contact-row" style="justify-content: flex-start; align-items: end;">
+            <textarea placeholder="Leave your message..."></textarea>
+            <button>Send Message</button>
+          </div>
         </div>
       </div>
-    </footer> -->
+    </section>
 
-    <div class="sidebar">
+    <footer>
+      <div id="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <p>CopyRight &copy; 2024 Sandy Fu</p>
+    </footer>
+
+    <!-- <div class="sidebar">
       <ul class="menu">
         <li class="itmes"><a href="#home" onclick="toggleMenu()">Home</a></li>
         <li class="itmes"><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -235,28 +99,8 @@
           <a href="#contact" onclick="toggleMenu()">Contact</a>
         </li>
       </ul>
-    </div>
-    <script>
-      function toggleMenu() {
-        const toggleMenu = document.querySelector(".toggle");
-        const sidebar = document.querySelector(".sidebar");
-        toggleMenu.classList.toggle("active");
-        sidebar.classList.toggle("active");
-      }
-
-      function showFirstPage() {
-        const imgSideBar = document.querySelector(".imgSideBar");
-        const contentBox = document.querySelector(".contentBox");
-        imgSideBar.classList.remove("leave");
-        imgSideBar.addEventListener("transitionend", function (e) {
-          // console.log(e);
-          if (e.propertyName === "left") {
-            contentBox.style.opacity = 1;
-          }
-        });
-      }
-      showFirstPage();
-      window.addEventListener("contextmenu", (event) => event.preventDefault());
-    </script>
+    </div> -->
   </body>
+  <script src="./aos.js"></script>
+  <script src="./index.js"></script>
 </html>
