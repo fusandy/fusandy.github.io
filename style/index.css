@@ -216,6 +216,7 @@ section#experiences h1 {
   display: block;
   position: absolute;
   top: 50%;
+  color: var(--primary-color);
   margin-top: -8px;
   width: 100%;
   cursor: pointer;
@@ -258,6 +259,7 @@ section#experiences h1 {
   margin-left: -72%;
   left: 0;
   white-space: nowrap;
+  color: var(--primary-color);
 }
 
 .single-item.active {
