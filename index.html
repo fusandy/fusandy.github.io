@@ -11,33 +11,181 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="havbar-ham">
-        <img src="public/images/menu.svg"/>
-      </div>
+      <svg id="navbar-ham" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="navbar-ham-path" d="M10 11.6667H18.3334C18.7754 11.6667 19.1993 11.8423 19.5119 12.1548C19.8244 12.4674 20 12.8913 20 13.3333C20 13.7754 19.8244 14.1993 19.5119 14.5118C19.1993 14.8244 18.7754 15 18.3334 15H10C9.55801 15 9.13409 14.8244 8.82153 14.5118C8.50897 14.1993 8.33337 13.7754 8.33337 13.3333C8.33337 12.8913 8.50897 12.4674 8.82153 12.1548C9.13409 11.8423 9.55801 11.6667 10 11.6667ZM21.6667 25H30C30.4421 25 30.866 25.1756 31.1786 25.4882C31.4911 25.8007 31.6667 26.2246 31.6667 26.6667C31.6667 27.1087 31.4911 27.5326 31.1786 27.8452C30.866 28.1577 30.4421 28.3333 30 28.3333H21.6667C21.2247 28.3333 20.8008 28.1577 20.4882 27.8452C20.1756 27.5326 20 27.1087 20 26.6667C20 26.2246 20.1756 25.8007 20.4882 25.4882C20.8008 25.1756 21.2247 25 21.6667 25ZM10 18.3333H30C30.4421 18.3333 30.866 18.5089 31.1786 18.8215C31.4911 19.134 31.6667 19.558 31.6667 20C31.6667 20.442 31.4911 20.866 31.1786 21.1785C30.866 21.4911 30.4421 21.6667 30 21.6667H10C9.55801 21.6667 9.13409 21.4911 8.82153 21.1785C8.50897 20.866 8.33337 20.442 8.33337 20C8.33337 19.558 8.50897 19.134 8.82153 18.8215C9.13409 18.5089 9.55801 18.3333 10 18.3333Z"/>
+      </svg>
       <a class="navbar-text" id='aboutTab' href="#about">ABOUT</a>
-      <a class="navbar-text" id='portfolioTab' href="#portfolio">PORTFOLIO</a>
+      <a class="navbar-text" id='skillsTab' href="#skills">SKILLS</a>
+      <a class="navbar-text" id='experiencesTab' href="#experiences">EXPERIENCES</a>
+      <a class="navbar-text" id='projectsTab' href="#projects">PROJECTS</a>
       <a class="navbar-text" id='contactTab' href="#contact">CONTACT</a>
     </div>
 
     <section id="about">
       <div class="profile-text">
-        <div class="given-name" data-aos="fade-right" data-aos-delay="20" data-aos-duration="1000">Hi,</div>
+        <div class="greeting-word" data-aos="fade-right" data-aos-delay="20" data-aos-duration="1000">Hi,</div>
         <div class="family-name" data-aos="fade-left" data-aos-delay="20" data-aos-duration="2000">I'm SANDY.</div>
-        <div class="self-intro" data-aos="fade-up" data-aos-duration="2500"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos, error, voluptatum dolorum quasi quia nostrum harum rerum reprehenderit sapiente distinctio laboriosam eum impedit fugit. Praesentium atque reprehenderit ex cumque!</div>
+        <div class="self-intro" data-aos="fade-up" data-aos-duration="2500">
+          Hi, I'm Sandy. <br />
+          I'm a Front End Engineer with almost 2 years experiences in building responsive and user-friendly web applications. <br />
+          My goal is to continue learning and growing while making meaningful contributions to projects. <br />
+          Looking forward to connecting and collaborating!
+        </div>
       </div>
-      
       <div class="profile-img">
         <img src="public/images/profile.jpg">
       </div>
     </section>
 
-    <section id="portfolio">
-      portfolio
+    <section id="skills">
+      <div class="skills-row">
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1000">
+          <img src="./public/images/html.png"/>
+          <p class="skills-name">HTML</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1000">
+          <img src="./public/images/css.png"/>
+          <p class="skills-name">CSS</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1000">
+          <img src="./public/images/sass.png"/>
+          <p class="skills-name">SASS</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1000">
+          <img src="./public/images/js.png"/>
+          <p class="skills-name">ES6</p>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1500">
+          <img src="./public/images/react.png"/>
+          <p class="skills-name">REACT</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1500">
+          <img src="./public/images/antd.png"/>
+          <p class="skills-name">ANTD</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1500">
+          <img src="./public/images/mui.png"/>
+          <p class="skills-name">MUI</p>
+        </div>
+        <div class="skills-icon vertical" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="1500">
+          <img src="./public/images/figma.png"/>
+          <p class="skills-name">FIGMA</p>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-icon vertical" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="2000">
+          <img src="./public/images/node.png"/>
+          <p class="skills-name">NODEJS</p>
+        </div>
+        <div class="skills-icon vertical" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="2000">
+          <img style="padding-left: -10px;" src="./public/images/mysql.png"/>
+          <p class="skills-name">MYSQL</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="2000">
+          <img src="./public/images/git.png"/>
+          <p class="skills-name">GIT</p>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="2500">
+          <img src="./public/images/korean.png"/>
+          <p class="skills-name">TOPIK 5</p>
+        </div>
+        <div class="skills-icon" data-aos="zoom-in" data-aos-delay="20" data-aos-duration="2500">
+          <img src="./public/images/english.png"/>
+          <p class="skills-name">TOEIC 850</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences">
+      <h1 data-aos="flip-left" data-aos-delay="20" data-aos-duration="1200">
+        Education & Eperiences
+      </h1>
+      <div class="timeline-wrapper">
+        <div class="timeline-area">
+          <div class="line-area"></div>
+          <div class="single-item">
+            <span>2012-2017</span>
+            <div class="timeline-image">
+              <img src="./public/images/ntpu.png" alt="ntpu">
+              <span>Bachelor</span>
+            </div>
+          </div>
+          <div class="single-item">
+            <span>2017-2019</span>
+            <div class="timeline-image">
+              <img src="./public/images/hess.png" alt="hess">
+              <span>HESS</span>
+            </div>
+          </div>
+          <div class="single-item">
+            <span>2019-2021</span>
+            <div class="timeline-image">
+              <img src="./public/images/trip.png" alt="trip">
+              <span>TRIP.COM</span>
+            </div>
+          </div>
+          <div class="single-item">
+            <span>2021-2022</span>
+            <div class="timeline-image">
+              <img src="./public/images/ispan.jpeg" alt="ispan">
+              <span>iSPAN</span>
+            </div>
+          </div>
+          <div class="single-item">
+            <span>2022-2023</span>
+            <div class="timeline-image">
+              <img src="./public/images/alp.png" alt="alp">
+              <span>Ally Logistics Property</span>
+            </div>
+          </div>
+          <div class="single-item">
+            <span>2023-NOW</span>
+            <div class="timeline-image">
+              <img src="./public/images/knowtecq.png" alt="knowtecq">
+              <span>Knowtecq</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-size-wrapper">
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000">
+          <div class="time-year">2012 - 2017</div>
+          <div class="experiences">National Taipei University</div>
+        </div>
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+          <div class="time-year">2017 - 2019</div>
+          <div class="experiences">HESS Educational Group</div>
+        </div>
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1400">
+          <div class="time-year">2019 - 2021</div>
+          <div class="experiences">Trip.com</div>
+        </div>
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1600">
+          <div class="time-year">2021 - 2022</div>
+          <div class="experiences">iSPAN F2E Courses</div>
+        </div>
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1800">
+          <div class="time-year">2022 - 2023</div>
+          <div class="experiences">Ally Logistics Property</div>
+        </div>
+        <div class="experiences-row" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+          <div class="time-year">2023 - NOW</div>
+          <div class="experiences">Knowtecq</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      projects
     </section>
 
     <section id="contact">
       <div class="contact-content">
-        <div>
+        <div class="contect-info">
           <h1 class="contact-title">Contact</h1>
           <p>Looking forward to hear from you.</p>
 
@@ -47,7 +195,7 @@
           <div class="contact-title">Email</div>
           <p>fusandy8260@gmail.com</p>
         </div>
-        <div>
+        <div class="contect-form">
           <div class="contact-row">
             <div class="contact-column">
               <p class="contact-title">First Name</p>
@@ -71,8 +219,8 @@
           <p class="contact-title">Message</p>
           <div class="contact-row" style="justify-content: flex-start; align-items: end;">
             <textarea placeholder="Leave your message..."></textarea>
-            <button>Send Message</button>
           </div>
+          <button>Send Message</button>
         </div>
       </div>
     </section>
@@ -87,19 +235,15 @@
       <p>CopyRight &copy; 2024 Sandy Fu</p>
     </footer>
 
-    <!-- <div class="sidebar">
+    <div class="side-menu">
       <ul class="menu">
-        <li class="itmes"><a href="#home" onclick="toggleMenu()">Home</a></li>
-        <li class="itmes"><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li class="itmes"><a href="#works" onclick="toggleMenu()">Works</a></li>
-        <li class="itmes">
-          <a href="#leisure" onclick="toggleMenu()">Leisure</a>
-        </li>
-        <li class="itmes">
-          <a href="#contact" onclick="toggleMenu()">Contact</a>
-        </li>
+        <li class="itmes"><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+        <li class="itmes"><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+        <li class="itmes"><a href="#experiences" onclick="toggleMenu()">EXPERIENCES</a></li>
+        <li class="itmes"><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+        <li class="itmes"><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
       </ul>
-    </div> -->
+    </div>
   </body>
   <script src="./aos.js"></script>
   <script src="./index.js"></script>
