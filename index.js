@@ -17,7 +17,7 @@ const svgPath = document.querySelector('#navbar-ham-path')
 const sideMenu = document.querySelector('.side-menu')
 
 const colors = {
-  white: '#fff',
+  // white: '#fff',
   primary: '#393127',
   secondary: '#f5ebe0'
 }
