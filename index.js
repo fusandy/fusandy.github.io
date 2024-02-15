@@ -12,12 +12,10 @@ const contactTab = document.querySelector('#contactTab')
 const contactSection = document.querySelector('#contact')
 
 const navbarTexts = document.querySelectorAll('.navbar-text')
-const navbarHam = document.querySelector('#navbar-ham')
 const svgPath = document.querySelector('#navbar-ham-path')
 const sideMenu = document.querySelector('.side-menu')
 
 const colors = {
-  // white: '#fff',
   primary: '#393127',
   secondary: '#f5ebe0'
 }
@@ -44,7 +42,6 @@ contactTab.addEventListener('click', () => {
 })
 
 const changeNavbarColor = () => {
-
   const skillsRect = skillsSection.getBoundingClientRect();
   const projectsRect = projectsSection.getBoundingClientRect();
 
@@ -68,10 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
   changeNavbarColor();
 })
 
-// mobile navbar
-navbarHam.addEventListener('click', () => {
-  sideMenu.classList.add('active')
-})
+// mobile side menu
+const showSideMenu = () => {
+  sideMenu.style.display = 'flex'
+}
+const hideSideMenu = () => {
+  sideMenu.style.display = 'none'
+}
 
 // web size experiences animation
 const items = document.querySelectorAll('.single-item')
@@ -90,24 +90,3 @@ singleItems.forEach(item => {
     spanElement.style.color = colors.primary;
   })
 })
-
-// function toggleMenu() {
-//   const toggleMenu = document.querySelector('.toggle');
-//   const sidebar = document.querySelector('.sidebar');
-//   toggleMenu.classList.toggle('active');
-//   sidebar.classList.toggle('active');
-// }
-
-// function showFirstPage() {
-//   const imgSideBar = document.querySelector('.imgSideBar');
-//   const contentBox = document.querySelector('.contentBox');
-//   imgSideBar.classList.remove('leave');
-//   imgSideBar.addEventListener('transitionend', function (e) {
-//     // console.log(e);
-//     if (e.propertyName === 'left') {
-//       contentBox.style.opacity = 1;
-//     }
-//   });
-// }
-// showFirstPage();
-// window.addEventListener('contextmenu', (event) => event.preventDefault());
