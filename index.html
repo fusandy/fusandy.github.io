@@ -250,28 +250,28 @@
           <div class="contact-row">
             <div class="contact-column">
               <p class="contact-title">First Name</p>
-              <input type='text' />
+              <input type='text' id="input-first-name" value=""/>
             </div>
             <div class="contact-column">
               <p class="contact-title">Last Name</p>
-              <input type='text'/>
+              <input type='text' id="input-last-name" value=""/>
             </div>
           </div>
           <div class="contact-row">
             <div class="contact-column">
               <p class="contact-title">Email</p>
-              <input type='email'/>
+              <input type='email' id="input-email" value=""/>
             </div>
             <div class="contact-column">
               <p class="contact-title">Subject</p>
-              <input type='text'/>
+              <input type='text' id="input-subject" value=""/>
             </div>
           </div>
           <p class="contact-title">Message</p>
           <div class="contact-row" style="justify-content: flex-start; align-items: end;">
-            <textarea placeholder="Leave your message..."></textarea>
+            <textarea placeholder="Leave your message..." id="input-textarea" value=""></textarea>
           </div>
-          <button>Send Message</button>
+          <button type="submit" onclick=sendMail()>Send Message</button>
         </div>
       </div>
     </section>

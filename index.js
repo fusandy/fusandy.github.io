@@ -15,6 +15,13 @@ const navbarTexts = document.querySelectorAll('.navbar-text')
 const svgPath = document.querySelector('#navbar-ham-path')
 const sideMenu = document.querySelector('.side-menu')
 
+const firstNameInput = document.querySelector('#input-first-name')
+const lastNameInput = document.querySelector('#input-last-name')
+const emailInput = document.querySelector('#input-email')
+const subjectInput = document.querySelector('#input-subject')
+const messageInput = document.querySelector('#input-textarea')
+const submitBtn = document.querySelector('#submit')
+
 const colors = {
   primary: '#393127',
   secondary: '#f5ebe0'
@@ -90,3 +97,25 @@ singleItems.forEach(item => {
     spanElement.style.color = colors.primary;
   })
 })
+
+// contact input
+const sendMail = () => {
+  const firstNameValue = firstNameInput.value
+  const lastNameValue = lastNameInput.value
+  const emailValue = emailInput.value
+  const subjectValue = subjectInput.value
+  const messageValue = messageInput.value
+  
+  const contactData = {
+    name: `${firstNameValue}, ${lastNameValue}`,
+    emailValue,
+    messageValue
+  }
+  
+  const receiveAddress = 'test@gmail.com'
+  const encodedSubject = encodeURIComponent(subjectValue)
+  const bodyData = encodeURIComponent(contactData)
+  
+  const mailtoUrl = `mailto:${receiveAddress}?subject=${encodedSubject}&body=${bodyData}`
+  window.open(mailtoUrl)
+}
